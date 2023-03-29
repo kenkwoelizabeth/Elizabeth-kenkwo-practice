@@ -8,7 +8,7 @@ public class work11 {
 
         Scanner scan = new Scanner(System.in);
 
-        //get the input for number of students:
+        //get the input for number of the favourite size:
         System.out.println("How many favorite things do you have? ");
         int favourite = scan.nextInt();
         scan.nextLine();// just to ignore the line
