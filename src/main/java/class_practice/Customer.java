@@ -5,22 +5,51 @@ public class Customer {
      public String address;
     public String email;
     String customerInfo;
-    public String[] purchasedProducts;
+    String Address[] ;
+    public Product[] purchasedProducts;
 
-  public Customer(String customerName,String address,String email,String[] purchasedProducts ){
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Customer(String customerName, String address, String email, Product[] purchasedProducts ){
     this.customerName=customerName;
     this.address=address;
     this.email=email;
     this.purchasedProducts=purchasedProducts;
 
+
 }
+
     public void getCustomerInfo() {
-        System.out.printf("Customer Name: "+ customerName);
-        System.out.printf("Customer Address: "+ address);
-        System.out.printf("Customer Email: "+ email);
-        System.out.printf("Customer Address: "+ address);
-       System.out.printf("Purchased Product: "+ purchasedProducts);
+        System.out.printf("Customer Name: "+ customerName +"\n");
+        System.out.printf("Customer Address: "+ address+"\n");
+        System.out.printf("Customer Email: "+ email+"\n");
+        System.out.printf("Customer Address: "+ address+"\n");
+        for (Product productList: purchasedProducts){
+            System.out.println(productList.getProductName() + " $" + productList.getPrice());
         }
-    }
+
+    }}
 
 
