@@ -9,11 +9,10 @@ public class Main3 {
 strings “red”, “green”, “blue” and “yellow”. Print out the array length. Make a
 copy using the clone( ) method. Use the Arrays.toString( ) method on the new
 array to verify that the original array was copied.*/
-        String[] work3 = {"red", "green", "blue", "yellow" };
+        String[] work3 = {"red", "green", "blue", "yellow"};
         int length = work3.length;
         System.out.println("The length of the array is " + length);
-        String[] copyWork3 = new String[4];
-        System.arraycopy(work3, 0, copyWork3, 0, 4);
+        String[] copyWork3 = work3.clone();
         System.out.println(Arrays.toString(copyWork3));
     }
 }

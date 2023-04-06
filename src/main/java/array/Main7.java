@@ -38,10 +38,10 @@ public class Main7 {
         }
         // return the resultant array
         System.out.println(Arrays.toString(anotherArray));
-        System.out.println("Index to be removed: " + index + " which is " + work7[2] );
+        System.out.println("Index to be removed: " + index + " which is " + work7[2]);
         System.out.println(Arrays.toString(anotherArray));
     }
-    }
+}
 
 
 

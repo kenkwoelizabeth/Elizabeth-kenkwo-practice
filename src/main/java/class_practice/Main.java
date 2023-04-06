@@ -17,8 +17,8 @@ public class Main {
 
         int numberOfStudents1 = student1.getStudentCount();
         System.out.println("There are " + numberOfStudents1 + " students");
-        System.out.printf(student1.getName() + " has an average score of %.2f\n" , student1.getAverageScore());
-        System.out.printf(student2.getName() + " has an average score of %.2f\n" , student2.getAverageScore());
+        System.out.printf(student1.getName() + " has an average score of %.2f\n", student1.getAverageScore());
+        System.out.printf(student2.getName() + " has an average score of %.2f\n", student2.getAverageScore());
 
 
         // getting the overloaded method
@@ -31,10 +31,9 @@ public class Main {
         student2.print(student2.getName(), student2.getAverageScore());
 
 
-
-  // constructor output
-        StudentRecord1 student3 = new StudentRecord1("Kalisha", 5.8,6.9, 7.3);
-        StudentRecord1 student4 = new StudentRecord1("Kris", 2.1,4.0,8.7);
+        // constructor output
+        StudentRecord1 student3 = new StudentRecord1("Kalisha", 5.8, 6.9, 7.3);
+        StudentRecord1 student4 = new StudentRecord1("Kris", 2.1, 4.0, 8.7);
         student3.AverageScore();
         student4.AverageScore();
 

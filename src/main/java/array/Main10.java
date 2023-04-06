@@ -12,5 +12,5 @@ public class Main10 {
         }
         System.out.println(Arrays.toString(work10));
 
-        }
     }
+}

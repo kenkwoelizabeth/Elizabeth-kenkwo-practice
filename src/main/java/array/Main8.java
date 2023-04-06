@@ -10,13 +10,13 @@ public class Main8 {
 
         int[] work8 = {4, 7, 8, 9, 13};
 
-	System.out.println("Original Array: "+Arrays.toString(work8));
-        int lastElement = work8[work8.length-1];  // to get the last element
-        work8[work8.length-1]=work8[0];
-        work8[0] = lastElement;
+        System.out.println("Original Array: " + Arrays.toString(work8));
+        int lastElement = work8[work8.length - 1];  // to get the last element
+        work8[work8.length - 1] = work8[0];// equating the last element to the first
+        work8[0] = lastElement;// Equating first element to the last
 
-            System.out.println("New array after swaping the first and last elements: "+Arrays.toString(work8));
-            }
-            }
+        System.out.println("New array after swaping the first and last elements: " + Arrays.toString(work8));
+    }
+}
 
 

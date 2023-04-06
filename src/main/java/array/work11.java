@@ -16,14 +16,12 @@ public class work11 {
 
         String things[] = new String[favourite];
 
-        for(int i = 0; i < things.length;i++)
-        {
+        for (int i = 0; i < things.length; i++) {
 
             System.out.println("Enter your thing: ");
             things[i] = scan.nextLine();
         }
-        for(String list:things)
-        {
+        for (String list : things) {
             System.out.println("Your favorite  things are: " + list);
         }
     }

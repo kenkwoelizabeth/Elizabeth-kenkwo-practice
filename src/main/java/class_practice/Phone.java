@@ -1,11 +1,11 @@
 package class_practice;
 
 public class Phone {
-// Setting the properties of the phone
+    // Setting the properties of the phone
     private String type;
     private String model;
 
-//getters and setters
+    //getters and setters
     public void setType(String a) {
         type = a;
     }
@@ -19,6 +19,7 @@ public class Phone {
     public void setModel(String n) {
         model = n;
     }
+
     public String getModel() {
         return model;
     }
@@ -28,11 +29,11 @@ public class Phone {
         Phone sa = new Phone();
         sa.setType("iphone");
         sa.setModel("Pro Max");
-        Phone sa2= new Phone();
+        Phone sa2 = new Phone();
         sa2.setType("Samsung");
         sa2.setModel("S23");
-        System.out.println("The name of the phone is " + sa.getType() + " and the model is " + sa.getModel() );
-        System.out.println("The name of the phone is " + sa2.getType() + " and the model is " + sa2.getModel() );
+        System.out.println("The name of the phone is " + sa.getType() + " and the model is " + sa.getModel());
+        System.out.println("The name of the phone is " + sa2.getType() + " and the model is " + sa2.getModel());
 
     }
 }

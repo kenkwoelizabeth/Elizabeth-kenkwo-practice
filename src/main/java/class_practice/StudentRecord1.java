@@ -2,10 +2,10 @@ package class_practice;
 
 public class StudentRecord1 {
 
-   String name;
+    String name;
     double mathScore;
-     double scienceScore;
-     double algebraScore;
+    double scienceScore;
+    double algebraScore;
 
     // Constructor  (must have the same name with the class)
     public StudentRecord1(String name) {
@@ -28,6 +28,6 @@ public class StudentRecord1 {
 
     void AverageScore() {
         double average = (this.algebraScore + this.mathScore + this.scienceScore) / 3;
-        System.out.printf(this.name + " has an average score of %.2f\n" , average);
+        System.out.printf(this.name + " has an average score of %.2f\n", average);
     }
 }
