@@ -1,7 +1,7 @@
-package april_1st;
+package april_1st_another_solution;
 
-import april_1st.my_sub_package.Address;
 
+import april_1st_another_solution.my_sub_package.Address;
 
 public class Customer {
     private CustomerName customerName;

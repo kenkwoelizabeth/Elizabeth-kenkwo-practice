@@ -1,4 +1,4 @@
-package april_1st.my_sub_package;
+package april_1st_another_solution.my_sub_package;
 
 public class Address {
     private boolean isPrimaryAddress;

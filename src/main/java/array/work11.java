@@ -22,7 +22,7 @@ public class work11 {
             things[i] = scan.nextLine();
         }
         for (String list : things) {
-            System.out.println("Your favorite  things are: " + list);
+            System.out.println("Your favorite  things are: " + list + " ");
         }
     }
 }
