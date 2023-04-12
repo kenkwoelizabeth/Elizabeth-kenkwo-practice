@@ -45,7 +45,7 @@ public class HRClient {
 
         // To get monthly Employee Compensation
         Employee employee3 = new CommissionedEmployee("Mike", LocalDate.of(2020, 02, 03),
-                55.2, 50.0);
+                55.2, new double[]{2,3,4});
         System.out.println("The monthly compensation of " + employee3.getName() + "'s commission is "
                 + "$" + employee3.computeMonthlyCompensation());
 

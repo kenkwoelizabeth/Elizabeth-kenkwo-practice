@@ -6,10 +6,10 @@ public class CommissionedEmployee extends Employee {
     private double commissionRate;
     private double[] monthlySales;
 
-    public CommissionedEmployee(String name, LocalDate hireDate, double commissionRate, double monthlySales) {
+    public CommissionedEmployee(String name, LocalDate hireDate, double commissionRate, double[] monthlySales) {
         super(name, hireDate);
         this.commissionRate = commissionRate;
-        this.monthlySales = new double[]{monthlySales};
+        this.monthlySales = monthlySales;
     }
 
     ;
