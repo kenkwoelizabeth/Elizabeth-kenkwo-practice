@@ -1,41 +1,54 @@
 package employee_app.com.hr.personnel;
 
 public class Department {
-    private Employee[] employees=new Employee[100];
+
+    // fields
+    private Employee[] employees = new Employee[100];
     private String name;
     private String location;
     private int currentIndex = 0;
 
+
+    // Constructor
     public Department(Employee[] employee, String name, String location) {
         this.employees = employee;
         this.name = name;
         this.location = location;
     }
 
-
-   public void addEmployee(Employee employee){
-     this.employees[currentIndex++] =employee;
-
-
-
-   }
-   public int letEmployeesWorkAndReturnNumberOfEmployeesWhoWorked(){
-
-       int numberOfEmployeesWhoWorked = 0;
-       for (int i = 0; i < employees.length; i++) {
-
-           if (employees[i] != null) {
-               String worked = employees[i].work();
-               if (worked.contains("worked")) {
-
-                   numberOfEmployeesWhoWorked++;
-               }
-           }
-       }
-       return numberOfEmployeesWhoWorked;
-   }
+    // Methods
+    public void addEmployee(Employee employee) {
+        this.employees[currentIndex++] = employee;
 
 
+    }
+
+    public int letEmployeesWorkAndReturnNumberOfEmployeesWhoWorked() {
+
+        int numberOfEmployeesWhoWorked = 0;
+        for (int i = 0; i < employees.length; i++) {
+
+            if (employees[i] != null) {
+                String worked = employees[i].work();
+                if (worked.contains("worked")) {
+
+                    numberOfEmployeesWhoWorked++;
+                }
+            }
+        }
+        return numberOfEmployeesWhoWorked;
+    }
+
+    // Compute total monthly compensation of all
+// employees in that department
+
+    public double computeDepartmentMonthlyTotalCompensation(){
+
+        // TODO: add code here
+        return 0.0;
+    }
+
+// getters and setters
 
     public Employee[] getEmployee() {
         return employees;
