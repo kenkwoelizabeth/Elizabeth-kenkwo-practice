@@ -19,12 +19,11 @@ public class HRClient {
                 + employee2.computeNumberOfYearsWorkedSinceHired());
 
 
-          // object for 2 salaried employee and one hourly employee
+        // object for 2 salaried employee and one hourly employee
         SalariedEmployee salariedEmployee1 = new SalariedEmployee("Mike", LocalDate.of(2020,
                 02, 03), 5000.0);
         SalariedEmployee salariedEmployee2 = new SalariedEmployee("Lizzy", LocalDate.of(2023,
                 05, 06), 5500.0);
-
 
 
         HourlyEmployee hourlyEmployee = new HourlyEmployee("Mike", LocalDate.of(2020, 02, 03),
@@ -39,7 +38,16 @@ public class HRClient {
         department.addEmployee(hourlyEmployee);
 
         System.out.println("We have " + department.letEmployeesWorkAndReturnNumberOfEmployeesWhoWorked() +
-                " employee that have worked in the " + department.getName() + " department " + " at our " + department.getLocation() + " Location");
+                " employee that have worked in the " + department.getName() + " department " + " at our "
+                + department.getLocation() + " Location" + " and their total monthly compensation is "
+                + "$" + department.computeDepartmentMonthlyTotalCompensation());
+
+
+        // To get monthly Employee Compensation
+        Employee employee3 = new CommissionedEmployee("Mike", LocalDate.of(2020, 02, 03),
+                55.2, 50.0);
+        System.out.println("The monthly compensation of " + employee3.getName() + "'s commission is "
+                + "$" + employee3.computeMonthlyCompensation());
 
     }
 }
