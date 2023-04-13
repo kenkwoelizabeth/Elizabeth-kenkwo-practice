@@ -23,6 +23,14 @@ public class HourlyEmployee extends Employee {
 
     }
 
+    @Override
+    public String getEmployeeInfo() {
+        // best practice is to create a name attach the statement in that name and return the name.
+        return super.getName() + " was hired on " + super.getHireDate()
+                + " with an hourly rate of $" + hourlyRate + " and so far have worked for "
+                + hoursWorkedPerMonth + " every month";
+    }
+
     // setters and getters
     public int getHoursWorkedPerMonth() {
         return hoursWorkedPerMonth;

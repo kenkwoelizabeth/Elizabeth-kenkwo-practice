@@ -17,6 +17,11 @@ public class CommissionedEmployee extends Employee {
 
     // method to get the monthly compensation
 
+    @Override
+    public String getEmployeeInfo() {
+        return null;
+    }
+
     public double computeMonthlyCompensation() {
         double result = 0.0;
         for (double sale : monthlySales) {

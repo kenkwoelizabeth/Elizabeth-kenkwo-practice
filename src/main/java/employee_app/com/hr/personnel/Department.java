@@ -18,17 +18,21 @@ public class Department {
 
     // Methods
     public void addEmployee(Employee employee) {
-        this.employees[currentIndex++] = employee;
-
-
+        employees[currentIndex++] = employee;
     }
 
     public int letEmployeesWorkAndReturnNumberOfEmployeesWhoWorked() {
 
         int numberOfEmployeesWhoWorked = 0;
+
+        // another way to write the loop
+     /*   for (int i = 0; i < numberOfEmployeesWhoWorked; i++) {
+            if (employees[i].work().contains("worked")) {  // to check for only employee that worked
+                numberOfEmployeesWhoWorked++;
+  */
         for (int i = 0; i < employees.length; i++) {
 
-            if (employees[i] != null) {
+            if (employees[i] != null) {  // to check for only non-empty employee
                 String worked = employees[i].work();
                 if (worked.contains("worked")) {
 
