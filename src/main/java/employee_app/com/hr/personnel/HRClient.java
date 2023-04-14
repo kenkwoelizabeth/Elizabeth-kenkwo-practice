@@ -1,6 +1,9 @@
 package employee_app.com.hr.personnel;
 
+
+import java.util.ArrayList;
 import java.time.LocalDate;
+import java.util.Arrays;
 
 // main methods of the projects
 public class HRClient {
@@ -36,8 +39,7 @@ public class HRClient {
                 70, 35.0);
 
 
-        Department department = new Department(new Employee[]{salariedEmployee1, salariedEmployee2, hourlyEmployee},
-                "Accounting", "Georgia");
+        Department department = new Department("Accounting", "Georgia");
 
         department.addEmployee(salariedEmployee1);
         department.addEmployee(salariedEmployee2);
@@ -50,8 +52,8 @@ public class HRClient {
 
 
         // To get monthly Employee Compensation
-        Employee employee3 = new CommissionedEmployee("Mike", LocalDate.of(2020, 02, 03),
-                55.2, new double[]{2, 3, 4});
+        CommissionedEmployee employee3 = new CommissionedEmployee("Mike", LocalDate.of(2020, 02, 03),
+                55.2, new ArrayList<>(Arrays.asList(25.0, 74.0)));
         System.out.println("The monthly compensation of " + employee3.getName() + "'s commission is "
                 + "$" + employee3.computeMonthlyCompensation());
 

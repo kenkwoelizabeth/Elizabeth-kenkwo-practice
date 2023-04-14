@@ -5,6 +5,8 @@ class A {
 
     final void ETL() {
         System.out.println(L + T + E);
-    };
+    }
+
+    ;
 }
 

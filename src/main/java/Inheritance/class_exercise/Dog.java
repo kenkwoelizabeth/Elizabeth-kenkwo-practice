@@ -4,6 +4,7 @@ public class Dog {
 
     private String bark;
     private String run;
+
     public String getBark() {
         return bark;
 
@@ -14,6 +15,6 @@ public class Dog {
     }
 
     public String getRun() {
-         return "running";
+        return "running";
     }
 }

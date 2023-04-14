@@ -21,7 +21,7 @@ public abstract class Employee {
     public abstract String getEmployeeInfo();
 
     public String work() {
-        return name + " worked";
+        return "worked";
     }
 
     public int computeNumberOfYearsWorkedSinceHired() {

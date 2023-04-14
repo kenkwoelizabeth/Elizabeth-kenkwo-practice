@@ -1,24 +1,29 @@
 package employee_app.com.hr.personnel;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 public class Department {
 
+
     // fields
-    private Employee[] employees = new Employee[100];
+    private Collection<Employee> employees = new ArrayList<>();
     private String name;
     private String location;
     private int currentIndex = 0;
 
 
     // Constructor
-    public Department(Employee[] employee, String name, String location) {
-        this.employees = employee;
+
+    public Department(String name, String location) {
         this.name = name;
         this.location = location;
     }
 
     // Methods
     public void addEmployee(Employee employee) {
-        employees[currentIndex++] = employee;
+        employees.add(employee);
     }
 
     public int letEmployeesWorkAndReturnNumberOfEmployeesWhoWorked() {
@@ -26,19 +31,11 @@ public class Department {
         int numberOfEmployeesWhoWorked = 0;
 
         // another way to write the loop
-     /*   for (int i = 0; i < numberOfEmployeesWhoWorked; i++) {
-            if (employees[i].work().contains("worked")) {  // to check for only employee that worked
+        for (Employee employee : employees) {
+            if (employee.work().equals("worked")) {  // to check for only employee that worked
                 numberOfEmployeesWhoWorked++;
-  */
-        for (int i = 0; i < employees.length; i++) {
-
-            if (employees[i] != null) {  // to check for only non-empty employee
-                String worked = employees[i].work();
-                if (worked.contains("worked")) {
-
-                    numberOfEmployeesWhoWorked++;
-                }
             }
+
         }
         return numberOfEmployeesWhoWorked;
     }
@@ -48,9 +45,10 @@ public class Department {
 
     public double computeDepartmentMonthlyTotalCompensation() {
         double totalCompensation = 0.0;
-        for (int i = 0; i < currentIndex; i++) {
-            double monthlyCompensation = employees[i].computeMonthlyCompensation();
-            totalCompensation += monthlyCompensation;
+        for (Employee employee : employees) {
+
+
+            totalCompensation += employee.computeMonthlyCompensation();
         }
 
         return totalCompensation;
@@ -58,13 +56,6 @@ public class Department {
 
 // getters and setters
 
-    public Employee[] getEmployee() {
-        return employees;
-    }
-
-    public void setEmployee(Employee[] employee) {
-        this.employees = employee;
-    }
 
     public String getName() {
         return name;
@@ -85,4 +76,13 @@ public class Department {
     public int getCurrentIndex() {
         return currentIndex;
     }
+
+    public Collection<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(Collection<Employee> employees) {
+        this.employees = employees;
+    }
+
 }
