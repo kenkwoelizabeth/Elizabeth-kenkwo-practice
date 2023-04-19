@@ -14,7 +14,7 @@ public class ArrayHomework {
 
             int[] counts = getCounts(uniqueWords, words); // get word counts
 
-            printOccurances(uniqueWords, counts); // print results
+            printOccurrences(uniqueWords, counts); // print results
 
         }
     }
@@ -72,7 +72,7 @@ public class ArrayHomework {
     }
 
     // helper method to print results
-    private static void printOccurances(String[] uniqueWords, int[] counts) {
+    private static void printOccurrences(String[] uniqueWords, int[] counts) {
         // Printing the results.
         for (int i = 0; i < uniqueWords.length; i++) {
             if (counts[i] == 1) {

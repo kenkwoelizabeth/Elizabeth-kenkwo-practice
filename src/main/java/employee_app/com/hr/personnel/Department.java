@@ -8,7 +8,7 @@ public class Department {
 
 
     // fields
-    private Collection<Employee> employees = new ArrayList<>();
+    private List<Employee> employees = new ArrayList<>();
     private String name;
     private String location;
     private int currentIndex = 0;
@@ -46,8 +46,6 @@ public class Department {
     public double computeDepartmentMonthlyTotalCompensation() {
         double totalCompensation = 0.0;
         for (Employee employee : employees) {
-
-
             totalCompensation += employee.computeMonthlyCompensation();
         }
 
@@ -81,7 +79,7 @@ public class Department {
         return employees;
     }
 
-    public void setEmployees(Collection<Employee> employees) {
+    public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
 
