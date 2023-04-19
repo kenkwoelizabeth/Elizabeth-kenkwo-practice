@@ -18,6 +18,14 @@ public class Main {
             MajorLeagueSoccer  league= new MajorLeagueSoccer();
               System.out.println(Arrays.toString(league.getPlayerNumberArray()));
 
-        }
+               league.sendPlayerToMinorLeague(4);
+               league.sendPlayerToMinorLeague(4);
+
+
+        league.transferPlayerToDifferentTeam(6, "Chelsea");
+        league.transferPlayerToDifferentTeam(6, " Bayern Munich");
+
+
+    }
     }
 
