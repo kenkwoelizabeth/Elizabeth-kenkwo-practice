@@ -13,7 +13,7 @@ public class Main {
 
 
         //Call “createANewArrayListFromExistingArray()” method with index value of 1
-        myOperation.replaceAnElementInTheStringArrayListGiven(1);
+        myOperation.replaceAnElementInTheStringArrayListGiven(4);
 
         //Print out the “myArrayList” and verify the 2nd String object (index of 1) is now changed to “Nah”
         System.out.println(myOperation.getMyArrayList().toString());
@@ -24,6 +24,7 @@ public class Main {
         System.out.println(list.toString());
 
 
+        //
         System.out.println("Enter a number: ");
         Scanner scanner = new Scanner(System.in);
 

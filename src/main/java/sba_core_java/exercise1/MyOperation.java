@@ -35,14 +35,13 @@ public class MyOperation implements IMyOperations {
     // from the “myArrayList” and return a new ArrayList object without “Nah”
     @Override
     public ArrayList<String> createANewArrayListFromExistingArray() {
-        Iterator<String> list = this.myArrayList.iterator();
-        while (list.hasNext()) {
-            String element = list.next();
-            if (element == "Nah") {
-                list.remove();
+        ArrayList<String> newList = new ArrayList<>();
+        for (String string : myArrayList) {
+            if (!string.equals("Nah")) {
+                newList.add(string);
             }
         }
-        return this.myArrayList;
+        return newList;
     }
 
 
