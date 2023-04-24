@@ -28,24 +28,24 @@ public class MajorLeagueSoccer {
     //Otherwise - the player is no longer in the team -, display a message saying “Player {playerID}
     // is no longer available
     public void sendPlayerToMinorLeague(int playerID) {
-        int index=playerID -1;
-        int playerIDInTheArray=playerNumberArray[index];
-        if (playerIDInTheArray!= -1) {
-            playerNumberArray[index]=-1;
-            System.out.println("Player " + playerID +" is sent to minor league");
+        int index = playerID - 1;
+        int playerIDInTheArray = playerNumberArray[index];
+        if (playerIDInTheArray != -1) {
+            playerNumberArray[index] = -1;
+            System.out.println("Player " + playerID + " is sent to minor league");
         } else {
-            System.out.println("Player " + playerID +" is no longer available ");
+            System.out.println("Player " + playerID + " is no longer available ");
         }
     }
 
     public void transferPlayerToDifferentTeam(int playerID, String destinationTeam) {
-        int index=playerID -1;
-        int playerIDInTheArray=playerNumberArray[index];
+        int index = playerID - 1;
+        int playerIDInTheArray = playerNumberArray[index];
         if (playerIDInTheArray != -1) {
-            playerNumberArray[index]=-1;
-            System.out.println("Player " + playerID +" is sent to transferred to " + destinationTeam);
+            playerNumberArray[index] = -1;
+            System.out.println("Player " + playerID + " is sent to transferred to " + destinationTeam);
         } else {
-            System.out.println("Player " + playerID +" is no longer available ");
+            System.out.println("Player " + playerID + " is no longer available ");
         }
     }
 
@@ -57,9 +57,6 @@ public class MajorLeagueSoccer {
     public void setPlayerNumberArray(int[] playerNumberArray) {
         this.playerNumberArray = playerNumberArray;
     }
-
-
-
 
 
 }

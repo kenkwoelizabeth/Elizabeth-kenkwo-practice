@@ -37,7 +37,7 @@ public class Main {
                 list.getAvailableQuantity());
 
 
-         // part 3
+        // part 3
         System.out.println("----------- Testing the constructor of MySystem class -----");
         MySystem newSystem = new MySystem();
 
@@ -68,7 +68,7 @@ public class Main {
 
         newSystem.getItems();
 
-          // part 6
+        // part 6
         System.out.println("----------- Testing reduceAvailableQuantity(..) method -----");
         Integer availableQuantity = newSystem.getMyItemsInHashMap().get("Rice").getAvailableQuantity();
         System.out.println("Available quantity for Rice before purchase = " + availableQuantity);
