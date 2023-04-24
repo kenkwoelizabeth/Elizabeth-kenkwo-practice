@@ -17,3 +17,9 @@ weekly 1-1.
 private Collection<Employee> employees = new ArrayList<>();
 ```
 - No "sba_exercise" work done
+
+
+## April 24th (Monday)
+
+- sba_core_java exercise is done correctly
+- please reformat the code so that indentation is corrected
