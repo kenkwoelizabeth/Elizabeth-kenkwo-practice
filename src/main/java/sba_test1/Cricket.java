@@ -1,7 +1,7 @@
 package sba_test1;
 
-public class Cricket implements Sport{
-     int[] playersIDs;
+public class Cricket implements Sport {
+    int[] playersIDs;
 
 
     public Cricket() {
@@ -18,17 +18,17 @@ public class Cricket implements Sport{
         for (double value : age) {
             sum += value;
         }
-        double average= sum/ age.length     ;
-        System.out.println("The average age of the team is "+ average);
+        double average = sum / age.length;
+        System.out.println("The average age of the team is " + average);
     }
 
     @Override
     public void retirePlayer(int id) {
-        int index=id -1;
-        int playerIDInTheArray=playersIDs[index];
-        if (playerIDInTheArray!= -1) {
-            playersIDs[index]=-1;
-            System.out.println("Player with id: " + id +" has retired");
+        int index = id - 1;
+        int playerIDInTheArray = playersIDs[index];
+        if (playerIDInTheArray != -1) {
+            playersIDs[index] = -1;
+            System.out.println("Player with id: " + id + " has retired");
         } else {
             System.out.println("Player has already retired ");
         }

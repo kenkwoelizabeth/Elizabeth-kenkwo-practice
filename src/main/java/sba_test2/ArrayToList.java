@@ -17,16 +17,17 @@ public class ArrayToList implements MyList {
         for (int i = 0; i < a.length; i++) {
             this.arrayToList.add(a[i]);
 
-            String v="I have added " + a[i] + " at the index: " + i ;
+            String v = "I have added " + a[i] + " at the index: " + i;
             System.out.println(v);
         }
 
-}
+    }
+
     @Override
     public void replace(int idx) {
-        String element= arrayToList.get(idx);
+        String element = arrayToList.get(idx);
         this.arrayToList.set(idx, "");
-        String s="I have replaced the String: " + element+  " with a null string";
+        String s = "I have replaced the String: " + element + " with a null string";
         System.out.println(s);
     }
 
